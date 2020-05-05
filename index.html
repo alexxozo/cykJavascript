@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CYG Algorithm</title>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+    <script src="./index.js"></script>
+
+    <style>
+        table, th, td {
+            border: 1px solid #61b4f7;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+
+        table {
+            /* width: 600px; */
+            margin-top: 10px;
+            background: #2196F3;
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            font-weight: bold;
+            font-family: sans-serif;
+            text-align: center;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>CYK Algorithm</h1>
+    <h2 id="success" style="color: green; display: none;">Cuvant acceptat!</h2>
+    <h2 id="fail" style="color: red; display: none;">Cuvant invalid!</h2>
+    <input type="text" id="word" style="max-width: 200px;" placeholder="Insert text to verify">
+    <button onclick="runCYK()" style="max-width: 100px;">Start</button>
+
+    <div id="table"></div>
+</body>
+</html>
